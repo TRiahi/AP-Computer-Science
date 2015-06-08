@@ -1,0 +1,15 @@
+unbounded
+Fish 5 5 North
+SlowFish 3 3 South
+Fish 10 10 East
+SlowFish 6 8 West
+SlowFish 2 10 North
+SlowFish 1 1 South
+SlowFish 4 7 East
+Fish 11 0 West
+Fish 0 8 North
+Fish 5 10 South
+SlowFish 9 3 East
+SlowFish 10 7 West
+Fish 3 1 North
+Fish 4 5 South

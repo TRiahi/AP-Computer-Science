@@ -1,0 +1,3 @@
+The number of bottles opened was: 234
+The number of winning bottle caps found was: 56
+The average number of bottles that need to be opened to win is: 4

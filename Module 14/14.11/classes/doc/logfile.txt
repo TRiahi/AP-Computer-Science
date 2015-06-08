@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+/Applications/BlueJ.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+/Applications/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Applications/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes
+-d
+/Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc
+-encoding
+US-ASCII
+-charset
+US-ASCII
+-docletpath
+/Applications/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/Picture.java
+<---- end of javadoc command ---->
+Loading source file /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/Picture.java...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_45
+Building tree for all the packages and classes...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/Picture.html...
+/Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/Picture.java:736: warning - @param argument "pixels" is not a parameter name.
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/package-frame.html...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/package-summary.html...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/allclasses-frame.html...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/allclasses-noframe.html...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/index.html...
+Generating /Users/willkaufman/Dropbox/School/2014-15/7_Computer-Science/labs/Lab11_Picture-Lab/classes/doc/stylesheet.css...
+1 warning

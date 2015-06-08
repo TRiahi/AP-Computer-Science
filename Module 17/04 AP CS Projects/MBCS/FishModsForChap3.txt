@@ -1,0 +1,133 @@
+This file contains the code that should be added to Fish.java
+for Chapter 3.  There are six code fragments.
+            - the Modification History in the class documentation
+            - the two new instance variables
+            - the initialization of those variables in initialize
+            - the act method
+            - the breed and generateChild methods
+            - the die method
+
+-----------------
+
+1.  Add the following lines to the documentation comments describing
+    the Fish class (before the @author line).
+
+ *
+ *  <p>
+ *  Modification History:
+ *  - Modified to support a dynamic population in the environment:
+ *    fish can now breed and die.
+ *
+
+-----------------
+
+2.  Add the following lines immediately after the other instance variables
+    in Fish.
+
+// THE FOLLOWING TWO INSTANCE VARIABLES ARE NEW IN CHAPTER 3 !!!
+    private double probOfBreeding;     // defines likelihood in each timestep
+    private double probOfDying;        // defines likelihood in each timestep
+
+
+-----------------
+
+3.  Put the following lines in Fish.initialize after the line that sets myColor.
+
+// THE FOLLOWING CODE IS NEW IN CHAPTER 3 !!!
+        // For now, every fish is equally likely to breed or die in any given
+        // timestep, although this could be individualized for each fish.
+        probOfBreeding = 1.0/7.0;   // 1 in 7 chance in each timestep
+        probOfDying = 1.0/5.0;      // 1 in 5 chance in each timestep
+
+
+-----------------
+
+4.  Replace Fish.act with the following.
+
+// THE FOLLOWING METHOD IS MODIFIED FOR CHAPTER 3 !!!
+//       (was originally a check for aliveness and a simple call to move)
+    /** Acts for one step in the simulation.
+     **/
+    public void act()
+    {
+        // Make sure fish is alive and well in the environment -- fish
+        // that have been removed from the environment shouldn't act.
+        if ( ! isInEnv() )
+            return;
+
+        // Try to breed.
+        if ( ! breed() )
+            // Did not breed, so try to move.
+            move();
+
+        // Determine whether this fish will die in this timestep.
+        Random randNumGen = RandNumGenerator.getInstance();
+        if ( randNumGen.nextDouble() < probOfDying )
+            die();
+    }
+
+
+-----------------
+
+5.  Add the following two methods before the move method.
+
+// THE FOLLOWING METHOD IS NEW FOR CHAPTER 3 !!!
+    /** Attempts to breed into neighboring locations.
+     *  @return    <code>true</code> if fish successfully breeds;
+     *             <code>false</code> otherwise
+     **/
+    protected boolean breed()
+    {
+        // Determine whether this fish will try to breed in this
+        // timestep.  If not, return immediately.
+        Random randNumGen = RandNumGenerator.getInstance();
+        if ( randNumGen.nextDouble() >= probOfBreeding )
+            return false;
+
+        // Get list of neighboring empty locations.
+        ArrayList emptyNbrs = emptyNeighbors();
+        Debug.print("Fish " + toString() + " attempting to breed.  ");
+        Debug.println("Has neighboring locations: " + emptyNbrs.toString());
+
+        // If there is nowhere to breed, then we're done.
+        if ( emptyNbrs.size() == 0 )
+        {
+            Debug.println("  Did not breed.");
+            return false;
+        }
+
+        // Breed to all of the empty neighboring locations.
+        for ( int index = 0; index < emptyNbrs.size(); index++ )
+        {
+            Location loc = (Location) emptyNbrs.get(index);
+            generateChild(loc);
+        }
+
+        return true;
+    }
+
+// THE FOLLOWING METHOD IS NEW FOR CHAPTER 3 !!!
+    /** Creates a new fish with the color of its parent.
+     *  @param loc    location of the new fish
+     **/
+    protected void generateChild(Location loc)
+    {
+        // Create new fish, which adds itself to the environment.
+        Fish child = new Fish(environment(), loc,
+                              environment().randomDirection(), color());
+        Debug.println("  New Fish created: " + child.toString());
+    }
+
+
+-----------------
+
+6.  Add the following method after the changeDirection method.
+
+// THE FOLLOWING METHOD IS NEW FOR CHAPTER 3 !!!
+    /** Removes this fish from the environment.
+     **/
+    protected void die()
+    {
+        Debug.println(toString() + " about to die.");
+        environment().remove(this);
+    }

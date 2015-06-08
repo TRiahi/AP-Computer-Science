@@ -1,0 +1,35 @@
+Activity 6 Questions
+1. 5 & 6, A & J, K & A
+2. No because the player removes any triplet consisting of a J, a Q, and a K
+3. Yes it does involve strategy because when multiple plays are available you can play your cards right (haha) in order to maximize your pairs.
+
+Activity 7 Questions
+1. A deck of cards. BOARD_SIZE, RANKS, SUITS, POINT_VALUES are needed for the ElevensBoard class.
+2. First there would be a while loop running when an int value i not being equal to 9. 
+This loop would necessitate the use of rand.NextInt(cards.size()) to generate a card to deal.
+This card would then be removed from the ArrayList, while, i would increase by 1 (i++) and cards.size() would decrease by 1 due to the removal of a card. 
+Then an if statement would determine if the player's selected cards equalled eleven, if they did then the if-then would break going back to the while loop.
+The same thing would happen if the player selected a J, Q, & K. All of this repeating until the deck of cards is emptied.
+3. The ElevensBoard.java starter code has all the prerequisites except for the actual code within certain methods
+4a. dealMyCards() is called in the ElevensBoard constructor as well as the newGame() method
+4b. isLegal(List<Integer> selectedCards) and anotherPlayIsPossible() should call the containsPairSum11() and containsJQK() methods
+4c. The returned list would be: {J,6,2,A,4} or {0,1,3,6,7}
+4d.  public static void printCards(ElevensBoard board)
+        {
+            List<Integer> cIndexes = board.cardIndexes();
+            for(int i = 0; i < cIndexes.size(); i++)
+            {
+                System.out.println(board.cards[i]);
+            }
+        }
+4e. anotherPlayIsPossible() needs to call the containsPairSum11() and containsJQK() methods in order to determine whether or not another play is possible
+ 
+Activity 8 Questions
+1. Elevens, Thirteens, and Tens are all played with the goal of reaching a certain point value, like Blackjack!
+2. The ElevensBoard creates a ElevensBoard object which is modelled after a Board object and gives that object the values in order to play Elevens.
+3. both isLegal and anotherPlayIsPossible are abstract methods meaning these methods cover the differences between all three games, so if another class was written for Thirteens or Blackjack then it could implement these methods.
+
+Activity 9 Questions
+1. Size varies between games and thus wouldn't be abstract since it's a variable.
+2. The Board interface already has those abstract methods to implement.
+3. If Board was an interface it would lose its constructor which Elevens uses to run the game.

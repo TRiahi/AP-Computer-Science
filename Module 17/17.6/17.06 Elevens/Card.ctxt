@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=cardRank\ cardSuit\ cardPointValue
+comment0.target=Card(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Creates\ a\ new\ <code>Card</code>\ instance.\r\n\r\n\ @param\ cardRank\ \ a\ <code>String</code>\ value\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ containing\ the\ rank\ of\ the\ card\r\n\ @param\ cardSuit\ \ a\ <code>String</code>\ value\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ containing\ the\ suit\ of\ the\ card\r\n\ @param\ cardPointValue\ an\ <code>int</code>\ value\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ containing\ the\ point\ value\ of\ the\ card\r\n
+comment1.params=
+comment1.target=java.lang.String\ suit()
+comment1.text=\r\n\ Accesses\ this\ <code>Card's</code>\ suit.\r\n\ @return\ this\ <code>Card's</code>\ suit.\r\n
+comment2.params=
+comment2.target=java.lang.String\ rank()
+comment2.text=\r\n\ Accesses\ this\ <code>Card's</code>\ rank.\r\n\ @return\ this\ <code>Card's</code>\ rank.\r\n
+comment3.params=
+comment3.target=int\ pointValue()
+comment3.text=\r\n\ Accesses\ this\ <code>Card's</code>\ point\ value.\r\n\ @return\ this\ <code>Card's</code>\ point\ value.\r\n
+comment4.params=otherCard
+comment4.target=boolean\ matches(Card)
+comment4.text=\ Compare\ this\ card\ with\ the\ argument.\r\n\ @param\ otherCard\ the\ other\ card\ to\ compare\ to\ this\r\n\ @return\ true\ if\ the\ rank,\ suit,\ and\ point\ value\ of\ this\ card\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ are\ equal\ to\ those\ of\ the\ argument;\r\n\ \ \ \ \ \ \ \ \ false\ otherwise.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Converts\ the\ rank,\ suit,\ and\ point\ value\ into\ a\ string\ in\ the\ format\r\n\ \ \ \ \ "[Rank]\ of\ [Suit]\ (point\ value\ \=\ [PointValue])".\r\n\ This\ provides\ a\ useful\ way\ of\ printing\ the\ contents\r\n\ of\ a\ <code>Deck</code>\ in\ an\ easily\ readable\ format\ or\ performing\r\n\ other\ similar\ functions.\r\n\r\n\ @return\ a\ <code>String</code>\ containing\ the\ rank,\ suit,\r\n\ \ \ \ \ \ \ \ \ and\ point\ value\ of\ the\ card.\r\n
+numComments=6

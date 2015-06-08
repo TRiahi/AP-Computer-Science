@@ -1,0 +1,13 @@
+unbounded
+Fish 5 5 North
+SlowFish 3 3 South
+DarterFish 10 10 East
+DarterFish 6 8 West
+SlowFish 2 10 North
+SlowFish 1 1 South
+SlowFish 6 5 East
+DarterFish 7 4 West
+DarterFish 7 5 North
+Fish 7 6 South
+Fish 8 5 East
+DarterFish 0 0 West

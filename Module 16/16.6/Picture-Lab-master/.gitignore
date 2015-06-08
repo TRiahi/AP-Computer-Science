@@ -1,0 +1,6 @@
+.DS_Store
+classes/__*
+classes/*.class
+classes/*.ctxt
+classes/docs/*.html
+
