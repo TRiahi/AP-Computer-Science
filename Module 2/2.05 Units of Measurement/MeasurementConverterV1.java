@@ -7,7 +7,7 @@
  *        therefore    6230 ft / 5280 = 1.17992 miles
  *          and    1.179 miles * 5280 = 6225.12 ft
  *
- * ©FLVS 2007
+ * Â©FLVS 2007
  * @author B. Jordan
  * @version 01/19/07
  *
@@ -23,14 +23,16 @@ public class MeasurementConverterV1
         double feet;                    // distance in feet
         double feetPerMile = 5280;      //number of feet per 1 mile
         double milesperkilometer = 1.609;      //number of miles in 1 kilometer
+        double pounds;   
+         double inches;                       // distance in inches
+        double inchesperfoot= 12;// weight in pounds  
         double kilometers;               // distance in kilometers
-        double pounds;                // weight in pounds
         double kilograms;             // weight in kilograms 
         double poundsperkilogram = 0.453592;     //number of pounds in 1 kilogram         
         double gallons;               // amount in gallons
         double liters;                // amount in liters
         double literspergallon = 3.78541;    // number of liters per gallon
-        double inches;                       // distance in inches
+        double inches 1995.0;                       // distance in inches
         double inchesperfoot= 12;           // amount of inches in one foot  
         
         //convert feet to miles
@@ -85,8 +87,7 @@ public class MeasurementConverterV1
       System.out.println(feet+" ft. ="+ inches +" in. ");
       
       
-      //convert inches to feet
-      inches= 1995.0;
+      //convert inches to fee
       feet= inches / inchesperfoot;
       System.out.println(inches+" in. ="+ feet +" ft. ");
       
