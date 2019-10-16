@@ -4,7 +4,7 @@
  * exchange rate.
  *
  *
- * ©BMT 2014
+ * Â©BMT 2014
  * @Author Bijan Tajmir
  * @version 09/30/2014
  */
@@ -14,13 +14,13 @@ public class CurrencyConversionV1
     {
         double startingUsDollars = 5000.00;		// local variable for US Dollars
         double pesosspent = 7210.25;            // local variable for Mexican pesos spent
-        double pesoExchangeRate = 13.45;        // local variable for exchange rate of Pesos to one dollar
+        double pesoExchangeRate = 19.24;        // local variable for exchange rate of Pesos to one dollar
         double dollarsSpentInMexico = 0.0;      // local variable for dollars spent in Mexico
         double remainingUsDollarsM = 0.0;        // local variable for US Dollars remaining, Mexico
         double yenspent = 99939.75;             // local variable for Jappanese Yen spent
-        double yenexchangerate = 109.87;        // local variable for exchange rate of yen to one dollar  
+        double yenexchangerate = 108.65;        // local variable for exchange rate of yen to one dollar  
         double eurosspent = 624.95;             // local variable for Euros spent in France
-        double euroexchangerate = .79;          // local variable for exchange rate of euros to one dollar
+        double euroexchangerate = .91;          // local variable for exchange rate of euros to one dollar
         double remainingUsDollarsJ = 0.0;        // local variable for US Dollars remaining, Japan
         double remainingUsDollarsE = 0.0;        // local variable for US Dollars remaining, Europe
         double remainingUsDollars = 0.0;         // local variable for US Dollars remaining 
